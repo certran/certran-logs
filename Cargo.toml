@@ -1,0 +1,21 @@
+[package]
+name = "certran-logs"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+async = ["winter-maybe-async/async"]
+debug-fmt = []
+
+[dependencies]
+base64 = { version = "0.22.1" }
+byteorder = { version = "1.5.0" }
+chrono = { version = "0.4.41" }
+oid-registry = { version = "0.8.1" }
+ouroboros = { version = "0.18.5" }
+serde = { version = "1.0.219", features = ["derive"] }
+thiserror = { version = "2.0.12" }
+url = { version = "2.5.4" }
+x509-parser = { version = "0.17.0" }
+winter-maybe-async = { version = "0.12.0" }
