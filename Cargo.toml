@@ -1,7 +1,14 @@
 [package]
 name = "certran-logs"
 version = "0.1.0"
+authors = ["Gergo Nemeth <nemethgergo02@gmail.com>"]
+description = "Primitives and parsers for Certificate Transparency logs"
+documentation = ""
 edition = "2024"
+keywords = ["async", "certificate", "transparency", "logs"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/certran/certran-logs"
+rust-version = "1.87.0"
 
 [features]
 default = []
