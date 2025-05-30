@@ -63,6 +63,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "async-trait"
+version = "0.1.88"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e539d3fca749fcee5236ab05e93a52867dd549cc157c8cb7f99595f3cedffdb5"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "autocfg"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -99,6 +110,7 @@ dependencies = [
 name = "certran-logs"
 version = "0.1.0"
 dependencies = [
+ "async-trait",
  "base64",
  "byteorder",
  "chrono",
@@ -107,7 +119,6 @@ dependencies = [
  "serde",
  "thiserror",
  "url",
- "winter-maybe-async",
  "x509-parser",
 ]
 
@@ -796,16 +807,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "56e6c93f3a0c3b36176cb1327a4958a0353d5d166c2a35cb268ace15e91d3b57"
 dependencies = [
  "windows-link",
-]
-
-[[package]]
-name = "winter-maybe-async"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eaa132be74e602b707f1dab5a69c38496445e54ee940e7c281c02b15007241bd"
-dependencies = [
- "quote",
- "syn",
 ]
 
 [[package]]
